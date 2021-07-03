@@ -10,6 +10,8 @@ import About from '../components/About/About'
 import AboutImage from 'components/About/AboutImage'
 import AboutCaption from 'components/About/AboutCaption'
 import AboutTitle from 'components/About/AboutTitle'
+import AboutBody from 'components/About/AboutBody'
+import Footer from 'components/Footer'
 
 export default function Home() {
     return (
@@ -29,14 +31,14 @@ export default function Home() {
                 <Hero />
                 <About>
                     <AboutTitle />
-                    <div className="flex justify-evenly items-center">
+                    <AboutBody>
                         <AboutImage />
                         <AboutCaption />
-                    </div>
+                    </AboutBody>
                 </About>
             </Main>
 
-            <footer></footer>
+            <Footer />
         </Layout>
     )
 }
