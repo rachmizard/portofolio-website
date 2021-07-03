@@ -2,9 +2,9 @@ import Chip from '../../components/UI/Chip'
 
 export default function AboutCaption() {
     return (
-        <div className="w-5/12 space-y-1">
+        <div className="w-8/12 sm:w-10/12 md:w-5/12 space-y-1">
             <h6 className="text-white text-2xl font-bold">Yes It`s me!</h6>
-            <p className="text-white font-normal leading-loose">
+            <p className="text-white font-normal leading-9">
                 I’m currently <span className="font-bold">working</span> as a
                 freelance <span className="font-bold">web developer</span> and
                 full time <span className="font-bold">frontend engineer</span>.
