@@ -1,0 +1,19 @@
+.btn {
+    @apply py-2 font-bold px-7 inline-flex items-center rounded-3xl focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 transition-all;
+}
+
+.btn-primary {
+    @apply bg-primary text-white hover:bg-white hover:text-dark;
+}
+
+.btn-outlined {
+    @apply bg-transparent border border-primary;
+}
+
+.btn-transparent {
+    @apply bg-transparent text-white hover:bg-transparent hover:text-gray-200;
+}
+
+.btn-icon {
+    @apply inline-flex items-center;
+}
