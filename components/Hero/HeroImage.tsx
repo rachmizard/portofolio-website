@@ -1,19 +1,11 @@
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 export default function HeroImage() {
-    const [show, setShow] = useState(false)
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setShow(true)
-        }, 500)
-
-        return () => clearTimeout(timeout)
-    }, [])
+    const { ref, inView } = useInView({ threshold: 0.5 })
 
     return (
-        <div className="relative mt-10 lg:mt-0">
+        <div ref={ref} className="relative mt-10 lg:mt-0">
             <div className="overflow-hidden hidden lg:block">
                 <Image
                     unoptimized
@@ -38,8 +30,8 @@ export default function HeroImage() {
                 />
             </div>
             <div
-                className={`hidden lg:block absolute transition-all bg-primary z-50 top-0 h-[500px] opacity-75 ${
-                    show ? 'w-0' : 'w-full'
+                className={`hidden lg:block absolute transition-all duration-1000 bg-primary z-50 top-0 h-[500px] opacity-75 ${
+                    inView ? 'w-0' : 'w-full'
                 }`}></div>
             <div className="hidden lg:block absolute border-1 border-white top-6 left-6 z-0 border h-[500px] w-full"></div>
         </div>
