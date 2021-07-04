@@ -1,6 +1,7 @@
 import Chip from 'components/UI/Chip'
 import SkillItem from './SkillItem'
 import { useState } from 'react'
+import skillsData from 'mocks/skills.json'
 
 interface ISkill {
     skillName: string
@@ -12,64 +13,7 @@ interface ISkill {
 }
 
 export default function Skills() {
-    const [skills] = useState<ISkill[]>([
-        {
-            skillName: 'Laravel',
-            url: 'https://laravel.com',
-            img: '/assets/laravel_icon.png',
-            alt: 'Laravel',
-            width: 80,
-            height: 80,
-        },
-        {
-            skillName: 'React',
-            url: 'https://reactjs.org',
-            img: '/assets/react_icon.png',
-            alt: 'React',
-            width: 80,
-            height: 80,
-        },
-        {
-            skillName: 'Vue',
-            url: 'https://vuejs.org',
-            img: '/assets/vue_icon.png',
-            alt: 'Vue`s Icon',
-            width: 80,
-            height: 80,
-        },
-        {
-            skillName: 'Angular',
-            url: 'https://angular.io',
-            img: '/assets/angular_logo_icon.png',
-            alt: 'Angular`s Icon',
-            width: 160,
-            height: 80,
-        },
-        {
-            skillName: 'Nodejs',
-            url: 'https://nodejs.org',
-            img: '/assets/nodejs_icon.png',
-            alt: 'Nodejs`s Icon',
-            width: 80,
-            height: 80,
-        },
-        {
-            skillName: 'MongoDB',
-            url: 'https://www.mongodb.com',
-            img: '/assets/mongodb_icon.png',
-            alt: 'Mongodb`s Icon',
-            width: 80,
-            height: 80,
-        },
-        {
-            skillName: 'MySQL',
-            url: 'https://www.mysql.com',
-            img: '/assets/mysql_icon.png',
-            alt: 'MySQL`s Icon',
-            width: 80,
-            height: 80,
-        },
-    ])
+    const [data] = useState<ISkill[]>(skillsData.skills)
 
     return (
         <section id="skills" className="mt-48 pt-20">
@@ -160,8 +104,8 @@ export default function Skills() {
                     application using React Native. Here are a couple technology
                     stacks I`ve been working with recently:
                 </p>
-                <div className="flex flex-wrap justify-center items-center max-w-xl mx-auto gap-10 mt-20">
-                    {skills.map((skill, i) => (
+                <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center max-w-xl mx-auto gap-10 mt-20">
+                    {data.map((skill, i) => (
                         <SkillItem key={i} data={skill} />
                     ))}
                 </div>

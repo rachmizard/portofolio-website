@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "projectName": "BCA - PAVO",
+            "projectImg": "/assets/bca_pavo.png",
+            "projectDescription": "BCA Pavo is application for fraud management system internal with 4 developers to building this app. This Project used Angular with version CLI 9.15 and Bootstrap design customize.",
+            "techStacks": [
+                {
+                    "id": 1,
+                    "technologyName": "Angular",
+                    "technologyUrl": "https://angular.io",
+                    "technologyDesc": "Google was provided Angular such as Framework JavaScript to build for faster development based on Front-End."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "projectName": "Spaongo",
+            "projectImg": "/assets/spaongo.png",
+            "projectDescription": "SpaonGo.com is No.1 online spa booking website in Bali. I've been developing Spaongo as support team using Laravel 5.1.",
+            "techStacks": [
+                {
+                    "id": 1,
+                    "technologyName": "Laravel",
+                    "technologyUrl": "https://laravel.com",
+                    "technologyDesc": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "projectName": "D-NET",
+            "projectImg": "/assets/dnet.png",
+            "projectDescription": "DNET is an internet provider application in Surabaya for technicians and users of D-Net internet users, such as internet providers in Indonesia, Indihome, Megavision, etc.",
+            "techStacks": [
+                {
+                    "id": 1,
+                    "technologyName": "Laravel",
+                    "technologyUrl": "https://laravel.com",
+                    "technologyDesc": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "projectName": "Aiwa - Alhijaz",
+            "projectImg": "/assets/aiwa.png",
+            "projectDescription": "AIWA is solution for simplify the departure of jamaah by an Agent.",
+            "techStacks": [
+                {
+                    "id": 1,
+                    "technologyName": "Laravel",
+                    "technologyUrl": "https://laravel.com",
+                    "technologyDesc": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "projectName": "D-NET",
+            "projectImg": "/assets/spaongo.png",
+            "projectDescription": "DNET is an internet provider application in Surabaya for technicians and users of D-Net internet users, such as internet providers in Indonesia, Indihome, Megavision, etc.",
+            "techStacks": [
+                {
+                    "id": 1,
+                    "technologyName": "Laravel",
+                    "technologyUrl": "https://laravel.com",
+                    "technologyDesc": "Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things."
+                }
+            ]
+        }
+    ]
+}

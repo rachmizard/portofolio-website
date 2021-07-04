@@ -1,0 +1,60 @@
+{
+    "skills": [
+        {
+            "skillName": "Laravel",
+            "url": "https://laravel.com",
+            "img": "/assets/laravel_icon.png",
+            "alt": "Laravel",
+            "width": 80,
+            "height": 80
+        },
+        {
+            "skillName": "React",
+            "url": "https://reactjs.org",
+            "img": "/assets/react_icon.png",
+            "alt": "React",
+            "width": 80,
+            "height": 80
+        },
+        {
+            "skillName": "Vue",
+            "url": "https://vuejs.org",
+            "img": "/assets/vue_icon.png",
+            "alt": "Vue`s Icon",
+            "width": 80,
+            "height": 80
+        },
+        {
+            "skillName": "Angular",
+            "url": "https://angular.io",
+            "img": "/assets/angular_logo_icon.png",
+            "alt": "Angular`s Icon",
+            "width": 160,
+            "height": 80
+        },
+        {
+            "skillName": "Nodejs",
+            "url": "https://nodejs.org",
+            "img": "/assets/nodejs_icon.png",
+            "alt": "Nodejs`s Icon",
+            "width": 80,
+            "height": 80
+        },
+        {
+            "skillName": "MongoDB",
+            "url": "https://www.mongodb.com",
+            "img": "/assets/mongodb_icon.png",
+            "alt": "Mongodb`s Icon",
+            "width": 80,
+            "height": 80
+        },
+        {
+            "skillName": "MySQL",
+            "url": "https://www.mysql.com",
+            "img": "/assets/mysql_icon.png",
+            "alt": "MySQL`s Icon",
+            "width": 80,
+            "height": 80
+        }
+    ]
+}

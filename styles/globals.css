@@ -39,3 +39,11 @@ body {
 .tooltip-arrow {
     @apply absolute text-white z-10 w-6 h-6 transform -translate-x-9 -translate-y-1 fill-current stroke-current;
 }
+
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
