@@ -6,7 +6,7 @@ type AboutProps = {
 
 export default function About({ children }: AboutProps) {
     return (
-        <section id="about" className="mt-48">
+        <section id="about" className="mt-32 pt-20">
             {children}
         </section>
     )

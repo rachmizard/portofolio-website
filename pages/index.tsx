@@ -11,6 +11,7 @@ import AboutImage from 'components/About/AboutImage'
 import AboutCaption from 'components/About/AboutCaption'
 import AboutTitle from 'components/About/AboutTitle'
 import AboutBody from 'components/About/AboutBody'
+import Skills from 'components/Skills'
 import Footer from 'components/Footer'
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
                 <NavLogo />
                 <NavItems>
                     <NavItem title="about" to="#about" />
-                    <NavItem title="skills" />
+                    <NavItem title="skills" to="#skills" />
                     <NavItem title="projects" />
                     <NavItem title="testimonials" />
                     <Button>Contact</Button>
@@ -36,6 +37,7 @@ export default function Home() {
                         <AboutCaption />
                     </AboutBody>
                 </About>
+                <Skills />
             </Main>
 
             <Footer />

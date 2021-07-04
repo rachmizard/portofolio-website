@@ -27,3 +27,15 @@ body {
     opacity: 0;
     transition: opacity 900ms;
 }
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+.tooltip {
+    @apply invisible absolute -top-10 left-7 bg-white text-dark rounded shadow-md py-1 px-10 transition-opacity duration-100 delay-100;
+}
+
+.tooltip-arrow {
+    @apply absolute text-white z-10 w-6 h-6 transform -translate-x-9 -translate-y-1 fill-current stroke-current;
+}
