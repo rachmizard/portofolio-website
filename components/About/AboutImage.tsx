@@ -18,7 +18,7 @@ export default function AboutImage() {
                 />
 
                 <div
-                    className={`hidden lg:block absolute transition-all duration-1000 bg-primary z-50 bottom-1 w-full opacity-75 ${
+                    className={`hidden sm:block absolute transition-all duration-1000 bg-primary z-50 bottom-1 w-full opacity-75 ${
                         inView ? 'h-0' : 'h-[403px]'
                     }`}></div>
                 <div className="absolute border-1 border-white top-6 left-6 z-0 border h-[400px] w-full"></div>
@@ -26,7 +26,7 @@ export default function AboutImage() {
             <div className="md:hidden">
                 <Image
                     unoptimized
-                    src="/assets/hero_picture_medium.png"
+                    src="/assets/about_img.png"
                     width={240}
                     height={240}
                     loading="lazy"
