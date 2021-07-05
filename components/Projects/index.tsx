@@ -2,8 +2,10 @@ import Scrollable from 'components/UI/Scrollable'
 import ProjectItem from './ProjectItem'
 import projectsData from 'mocks/projects.json'
 import { useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 export default function Projects() {
+    const { ref, inView } = useInView({ threshold: 0.1 })
     const [currentTab, setCurrentTab] = useState(1)
 
     const onClickTab = (value: number) => {
@@ -12,11 +14,16 @@ export default function Projects() {
 
     return (
         <section id="projects" className="mt-48 pt-20">
-            <div className="max-w-[14rem] mx-auto space-y-2">
-                <h4 className="font-bold text-center text-white text-4xl tracking-wider uppercase">
+            <div
+                ref={ref}
+                className="overflow-hidden max-w-[14rem] mx-auto space-y-2">
+                <h4
+                    className={`font-bold text-center text-white text-4xl tracking-wider uppercase transition-transform duration-1000 delay-100 transform ${
+                        inView ? '-translate-y-0' : '-translate-y-10'
+                    } `}>
                     Projects
                 </h4>
-                <div className="bg-white mx-auto w-[calc(100%-5rem)] h-2"></div>
+                <div className="bg-white mx-auto w-[calc(100%-4rem)] h-2"></div>
             </div>
             <div className="mt-5 space-y-4">
                 <p className="text-center text-white leading-loose">
@@ -55,15 +62,21 @@ export default function Projects() {
                     </ul>
                 </div>
             </div>
-            <div id="tab1" className={currentTab === 1 ? 'block' : 'hidden'}>
-                <Scrollable className="flex flex-nowrap overflow-x-scroll pb-5 hide-scroll-bar">
-                    {projectsData.projects.map((project) => (
-                        <ProjectItem key={project.id} data={project} />
-                    ))}
-                </Scrollable>
-            </div>
-            <div id="tab2" className={currentTab === 2 ? 'block' : 'hidden'}>
-                <p>Haiii</p>
+            <div className="min-h-screen flex flex-col overflow-hidden">
+                <div
+                    id="tab1"
+                    className={currentTab === 1 ? 'block' : 'hidden'}>
+                    <Scrollable className="flex flex-nowrap overflow-x-scroll pb-5 hide-scroll-bar">
+                        {projectsData.projects.map((project) => (
+                            <ProjectItem key={project.id} data={project} />
+                        ))}
+                    </Scrollable>
+                </div>
+                <div
+                    id="tab2"
+                    className={currentTab === 2 ? 'block' : 'hidden'}>
+                    <p>Haiii</p>
+                </div>
             </div>
         </section>
     )

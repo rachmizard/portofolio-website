@@ -3,6 +3,7 @@
         {
             "id": 1,
             "projectName": "BCA - PAVO",
+            "type": "web",
             "projectImg": "/assets/bca_pavo.png",
             "projectDescription": "BCA Pavo is application for fraud management system internal with 4 developers to building this app. This Project used Angular with version CLI 9.15 and Bootstrap design customize.",
             "techStacks": [
@@ -17,6 +18,7 @@
         {
             "id": 2,
             "projectName": "Spaongo",
+            "type": "web",
             "projectImg": "/assets/spaongo.png",
             "projectDescription": "SpaonGo.com is No.1 online spa booking website in Bali. I've been developing Spaongo as support team using Laravel 5.1.",
             "techStacks": [
@@ -31,6 +33,7 @@
         {
             "id": 3,
             "projectName": "D-NET",
+            "type": "web",
             "projectImg": "/assets/dnet.png",
             "projectDescription": "DNET is an internet provider application in Surabaya for technicians and users of D-Net internet users, such as internet providers in Indonesia, Indihome, Megavision, etc.",
             "techStacks": [
@@ -45,6 +48,7 @@
         {
             "id": 4,
             "projectName": "Aiwa - Alhijaz",
+            "type": "web",
             "projectImg": "/assets/aiwa.png",
             "projectDescription": "AIWA is solution for simplify the departure of jamaah by an Agent.",
             "techStacks": [
@@ -59,6 +63,7 @@
         {
             "id": 5,
             "projectName": "D-NET",
+            "type": "web",
             "projectImg": "/assets/spaongo.png",
             "projectDescription": "DNET is an internet provider application in Surabaya for technicians and users of D-Net internet users, such as internet providers in Indonesia, Indihome, Megavision, etc.",
             "techStacks": [

@@ -12,11 +12,11 @@ export default function ScrollAnimation({
     animate,
     delay,
     triggerOnce,
-    threshold,
+    threshold = 1.0,
     ...others
 }: Props) {
-    const { ref, inView, entry } = useInView({
-        threshold: 0,
+    const { ref, inView } = useInView({
+        threshold,
         delay,
         initialInView: true,
         triggerOnce,
@@ -24,8 +24,12 @@ export default function ScrollAnimation({
     })
 
     return (
-        <div ref={ref} className={`animate__animated ${inView ? animate : ''}`}>
-            {children}
+        <div className={`${inView ? 'visible' : 'invisible'}`}>
+            <div
+                ref={ref}
+                className={`animate__animated ${inView ? animate : ''}`}>
+                {children}
+            </div>
         </div>
     )
 }

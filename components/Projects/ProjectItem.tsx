@@ -10,6 +10,7 @@ interface ITechStack {
 interface IProjectItem {
     id: number
     projectName: string
+    type: string
     projectImg: string
     projectDescription: string
     techStacks: ITechStack[]

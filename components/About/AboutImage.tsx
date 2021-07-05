@@ -9,7 +9,7 @@ export default function AboutImage() {
             <div className="hidden md:block">
                 <Image
                     unoptimized
-                    src="/assets/hero_picture.png"
+                    src="/assets/about_img.png"
                     width={300}
                     height={400}
                     loading="lazy"
