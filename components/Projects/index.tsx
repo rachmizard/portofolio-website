@@ -13,7 +13,7 @@ export default function Projects() {
     }
 
     return (
-        <section id="projects" className="mt-48 pt-20">
+        <section id="projects" className="pt-20 min-h-screen">
             <div
                 ref={ref}
                 className="overflow-hidden max-w-[14rem] mx-auto space-y-2">

@@ -1,5 +1,5 @@
 .btn {
-    @apply py-2 font-bold px-7 inline-flex items-center rounded-3xl focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 transition-all;
+    @apply py-2 font-bold px-7 inline-flex items-baseline self-center rounded-3xl focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 transition-all;
 }
 
 .btn-primary {

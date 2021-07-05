@@ -72,8 +72,8 @@ export default function SkillCaption() {
                 Javascript
             </Chip>
             I also have experience in developing hybird mobile application using
-            React Native. Here are a couple technology stacks I`ve been working
-            with recently:
+            React Native. Here are several technology stacks that I`m familiar
+            with:
         </p>
     )
 }

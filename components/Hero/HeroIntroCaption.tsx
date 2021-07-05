@@ -12,8 +12,9 @@ export default function HeroIntroCaption() {
             <ScrollAnimation animate="animate__fadeInUp" threshold={0.5}>
                 <p className="mt-3 text-white tracking-wider font-bold">
                     I am currently working as a front end developer at an
-                    outsourcing company in Bandung and currently studying for a
-                    bachelors degree in informatics engineering.
+                    outsourcing company in Bandung and currently studying
+                    informatics engineering at Universitas Informatika dan
+                    Bisnis.
                 </p>
             </ScrollAnimation>
         </div>

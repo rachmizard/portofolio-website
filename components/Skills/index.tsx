@@ -19,7 +19,7 @@ export default function Skills() {
     const [data] = useState<ISkill[]>(skillsData.skills)
 
     return (
-        <section id="skills" className="mt-48 pt-20">
+        <section id="skills" className="mt-48 pt-20 min-h-screen">
             <SkillTitle />
             <SkillContent>
                 <SkillCaption />

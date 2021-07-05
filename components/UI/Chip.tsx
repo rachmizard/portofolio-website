@@ -14,7 +14,7 @@ export default function Chip({ children, href = '#', target }: ChipProps) {
             href={href}
             rel="noreferrer"
             target={target}
-            className="rounded-full inline-flex items-baseline font-medium py-1 px-3 mx-2 text-dark bg-white shadow-md transition-all hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-opacity-75 focus:ring-primary">
+            className="rounded-full inline-flex items-baseline self-center font-medium py-1 px-3 mx-2 text-dark bg-white shadow-md transition-all hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-opacity-75 focus:ring-primary">
             {children}
         </a>
     )
