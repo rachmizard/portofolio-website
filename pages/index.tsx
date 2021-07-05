@@ -25,7 +25,9 @@ export default function Home() {
                     <NavItem title="skills" to="#skills" />
                     <NavItem title="projects" to="#projects" />
                     <NavItem title="testimonials" />
-                    <Button>Contact</Button>
+                    <Button type="link" href="#footer">
+                        Contact
+                    </Button>
                 </NavItems>
             </Nav>
 

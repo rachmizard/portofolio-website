@@ -1,13 +1,17 @@
 import React from 'react'
 import styles from '../../styles/Button.module.css'
 
-type ButtonProps = {
+type TypeEnum = 'button' | 'link'
+
+type Props = {
     children: React.ReactNode
     className?: string
     style?: React.CSSProperties
     outlined?: boolean
     transparent?: boolean
     icon?: React.ReactNode
+    href?: string
+    type?: TypeEnum
 }
 
 export default function Button({
@@ -17,7 +21,9 @@ export default function Button({
     style,
     transparent = false,
     icon = null,
-}: ButtonProps) {
+    href,
+    type = 'button',
+}: Props) {
     const classes = [className, styles['btn']]
 
     if (outlined) {
@@ -32,6 +38,14 @@ export default function Button({
 
     if (icon !== null) {
         classes.push(styles['btn-icon'])
+    }
+
+    if (type === 'link') {
+        return (
+            <a href={href} className={classes.join(' ')}>
+                {children}
+            </a>
+        )
     }
 
     return (
