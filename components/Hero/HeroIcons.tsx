@@ -2,7 +2,6 @@ import { Icon } from '@iconify/react'
 import githubFilled from '@iconify/icons-ant-design/github-filled'
 import linkedInOutlined from '@iconify/icons-ant-design/linkedin-outlined'
 import instagramOutlined from '@iconify/icons-ant-design/instagram-outlined'
-import twitterCircleFilled from '@iconify/icons-ant-design/twitter-circle-filled'
 
 export default function HeroIcons() {
     return (
@@ -40,18 +39,6 @@ export default function HeroIcons() {
                     width={40}
                     height={40}
                     icon={instagramOutlined}
-                    className="text-primary hover:text-white"
-                />
-            </a>
-            <a
-                href="https://twitter.com/razimmmm  "
-                rel="noreferrer"
-                target="_blank"
-                className="transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 rounded-full">
-                <Icon
-                    width={40}
-                    height={40}
-                    icon={twitterCircleFilled}
                     className="text-primary hover:text-white"
                 />
             </a>
