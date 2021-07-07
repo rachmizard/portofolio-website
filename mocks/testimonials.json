@@ -1,0 +1,16 @@
+{
+     "testimonials": [
+          {
+               "id": 1,
+               "name": "Raka Pratama",
+               "desc": "“Rachmizard is a developer with a good manner and highly motivated to finish his responsibility. He is encouraged to learn more and to better. He easily absorbs the direction given to him, and finish it with a good result. ”",
+               "photo": "/assets/user_01.jpeg"
+          },
+          {
+               "id": 2,
+               "name": "Mochammad Fiqri Jungjunan",
+               "desc": "“I've worked with him on a lot of sprints, the speed and accuracy of his work is really cool. Javascript expert, especially Angular.”",
+               "photo": "/assets/user_02.jpeg"
+          }
+     ]
+}
