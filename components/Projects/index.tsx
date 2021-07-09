@@ -70,34 +70,28 @@ export default function Projects() {
                          </ul>
                     </div>
                </div>
-               <div className="min-h-screen flex flex-col overflow-hidden">
+               <div className="min-h-screen flex flex-col">
                     <div
                          id="tab1"
-                         className={currentTab === 1 ? 'block' : 'hidden'}>
-                         <Scrollable
-                              data={websites}
-                              className="flex flex-nowrap overflow-x-scroll pb-5 hide-scroll-bar">
-                              {websites.map((project) => (
-                                   <ProjectItem
-                                        key={project.id}
-                                        data={project}
-                                   />
-                              ))}
-                         </Scrollable>
+                         className={
+                              currentTab === 1
+                                   ? 'flex justify-center items-center flex-wrap'
+                                   : 'hidden'
+                         }>
+                         {websites.map((project) => (
+                              <ProjectItem key={project.id} data={project} />
+                         ))}
                     </div>
                     <div
                          id="tab2"
-                         className={currentTab === 2 ? 'block' : 'hidden'}>
-                         <Scrollable
-                              data={mobiles}
-                              className="flex flex-nowrap overflow-x-scroll pb-5 hide-scroll-bar">
-                              {mobiles.map((project) => (
-                                   <ProjectItem
-                                        key={project.id}
-                                        data={project}
-                                   />
-                              ))}
-                         </Scrollable>
+                         className={
+                              currentTab === 2
+                                   ? 'flex justify-center items-center flex-wrap'
+                                   : 'hidden'
+                         }>
+                         {mobiles.map((project) => (
+                              <ProjectItem key={project.id} data={project} />
+                         ))}
                     </div>
                </div>
           </section>

@@ -22,7 +22,7 @@ type ProjectItemProps = {
 
 export default function ProjectItem({ data }: ProjectItemProps) {
      return (
-          <div className="inline-block px-3 py-10">
+          <div className="inline-block px-3 py-5">
                <div className="group overflow-hidden relative w-96 h-56 shadow-lg rounded hover:shadow-md transition-all duration-300 ease-in-out cursor-pointer">
                     <Image
                          unoptimized
