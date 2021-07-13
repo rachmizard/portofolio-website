@@ -5,7 +5,7 @@ import downloadOutlined from '@iconify/icons-ant-design/download-outlined'
 export default function HeroButton() {
      const redirectHandler = () => {
           window.open(
-               'https://drive.google.com/file/d/11sycBUEJaFBCjmHSjlvtOqS2dTlmYVs_/view?usp=sharing',
+               'https://drive.google.com/file/d/1sxCRPc1urU22C8qj_c19qUDFgdwmyx62/view',
                '_blank'
           )
      }
